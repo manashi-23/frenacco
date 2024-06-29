@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frenacco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Frenacco</h1>
+    </header>
+    <main>
+        <section class="search">
+            <h2>Find Fun Places with Friends</h2>
+            <form id="activity-form">
+                <label for="activity">Select an Activity:</label>
+                <select id="activity" name="activity">
+                    <option value="cafe">Cafe</option>
+                    <option value="art">Art</option>
+                    <option value="events">Events</option>
+                    <option value="picnic spots">Picnic Spots</option>
+                    <option value="shopping places">Shopping Places</option>
+                    <option value="libraries">Libraries</option>
+                    <option value="historical place">Historical Place</option>
+                    <option value="movies">Movies</option>
+                    <option value="sports">Sports (Football, Pickleball, Badminton, Yoga)</option>
+                </select>
+                <label for="location">Enter Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter a city or place">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="video-results">
+            <!-- Videos will be displayed here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Frenacco. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

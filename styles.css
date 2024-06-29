@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background */
+    color: #333;
+}
+
+header {
+    background-color: #dcd0ff; /* Pastel purple */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.search {
+    margin-bottom: 40px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin: 10px 0;
+}
+
+select, input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #a8d5e2; /* Light blue border */
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a8d5e2; /* Pastel blue */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #86c1d9; /* Slightly darker blue */
+}
+
+#video-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video {
+    width: 300px;
+    text-align: center;
+    background-color: #ffefc1; /* Pastel yellow */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.video img:hover {
+    transform: scale(1.05);
+}
+
+.video h3 {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #f3a0c3; /* Pastel pink */
+}
+
+footer {
+    background-color: #dcd0ff; /* Pastel purple */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
