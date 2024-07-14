@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function fetchVideos(activity, location) {
-        const apiKey = 'AIzaSyDRKcHHPOb1tdAebP4NGRuVntDwNvdM_Uo'; 
+        const apiKey = 'AIzaSyDcj2O7Kqxh_eKKqOuVezxQOb0DDqFz7mM'; 
         const apiUrl = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&q=${activity}+in+${location}&part=snippet&type=video&maxResults=8`;
         fetch(apiUrl)
             .then(response => response.json())
