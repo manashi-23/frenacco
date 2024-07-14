@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => console.error('Error fetching data:', error));
     }
-
     function displayVideos(videos) {
         videoResults.innerHTML = '';
         videos.forEach(video => {
@@ -27,14 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
             const title = video.snippet.title;
             const thumbnail = video.snippet.thumbnails.high.url;
             const videoElement = document.createElement('div');
-            videoElement.classList.add('video');
+            videoElement.classList.add('col-md-4', 'video');
             videoElement.innerHTML = `
-                <a href="https://www.youtube.com/watch?v=${videoId}" target="_blank">
-                    <img src="${thumbnail}" alt="${title}">
-                    <h3>${title}</h3>
-                </a>
+                <h3>${title}</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/${videoId}" allowfullscreen></iframe>
+                </div>
             `;
             videoResults.appendChild(videoElement);
         });
     }
+  
 });
