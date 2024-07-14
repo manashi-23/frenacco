@@ -6,10 +6,6 @@
     <title>Frenacco</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-      </script>
-      <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <header>
@@ -17,19 +13,127 @@
     </header>
     <main>
         <section class="search">
-            <h2>Find Fun Places to Hangout with Friends</h2>
+            <h2>Find Fun Places with Friends</h2>
             <form id="activity-form">
                 <label for="activity">Select an Activity:</label>
                 <select id="activity" name="activity">
-                    <option value="cafe">Cafe</option>
-                    <option value="art">Art</option>
-                    <option value="events">Events</option>
-                    <option value="picnic spots">Picnic Spots</option>
-                    <option value="shopping places">Shopping Places</option>
-                    <option value="libraries">Libraries</option>
-                    <option value="historical place">Historical Place</option>
-                    <option value="movies">Movies</option>
-                    <option value="sports">Sports (Football, Pickleball, Badminton, Yoga)</option>
+                    <optgroup label="Cafes">
+                        <option value="Coffee Shops">Coffee Shops</option>
+                        <option value="Bakeries">Bakeries</option>
+                        <option value="Pet Cafes">Pet Cafes</option>
+                        <option value="Themed Cafes">Themed Cafes</option>
+                        <option value="Book Cafes">Book Cafes</option>
+                        <option value="Dessert Cafes">Dessert Cafes</option>
+                        <option value="Healthy Cafes">Healthy Cafes</option>
+                    </optgroup>
+                    <optgroup label="Restaruants">
+                        <option value="Fine Dining">Fine Dining</option>
+                        <option value="Casual Dining">Casual Dining</option>
+                        <option value="Fast Casual">Fast Casual</option>
+                        <option value="Fast Food">Fast Food</option>
+                        <option value="Family Style">Family Style</option>
+                        <option value="Buffets">Buffets</option>
+                        <option value="Ethnic Restaurants">Ethnic Restaurants</option>
+                        <option value="Bistros">Bistros</option>
+                        <option value="Brasseries">Brasseries</option>
+                        <option value="Steakhouses">Steakhouses</option>
+                        <option value="Seafood Restaurants">Seafood Restaurants</option>
+                        <option value="Vegan Restaurants">Vegan Restaurants</option>
+                        <option value="Food Trucks">Food Trucks</option>
+                        <option value="Pop-up Restaurants">Pop-up Restaurants</option>
+                    </optgroup>
+                    <optgroup label="Bars">
+                        <option value="Sports Bars">Sports Bars</option>
+                        <option value="Irish Pubs">Irish Pubs</option>
+                        <option value="Craft Beer Bars">Craft Beer Bars</option>
+                        <option value="Wine Bars">Wine Bars</option>
+                        <option value="Cocktail Bars">Cocktail Bars</option>
+                        <option value="Tiki Bars">Tiki Bars</option>
+                        <option value="Speakeasies">Speakeasies</option>
+                        <option value="Brewpubs">Brewpubs</option>
+                        <option value="Live Music Bars">Live Music Bars</option>
+                        <option value="Rooftop Bars">Rooftop Bars</option>
+                    </optgroup>
+                    <optgroup label="Clubbing">
+                        <option value="Nightclubs (Dance Clubs,Themed Clubs,VIP Clubs)">Sports Bars</option>
+                        <option value="LGBTQ+ Clubs and Bars(Gay Bars)">LGBTQ+ Clubs and Bars</option>
+                        <option value="Casinos and Gaming Clubs">Casinos and Gaming Clubs</option>
+                        <option value="Student and Social Clubs(University Clubs and Social Clubs)">Student and Social Clubs</option>
+                        <option value="Gentlemen's Clubs and Cabarets">Gentlemen's Clubs and Cabarets</option>
+                    </optgroup>
+                    <optgroup label="Art">
+                        <option value="Art Galleries">Art Galleries</option>
+                        <option value="Art Museums">Art Museums</option>
+                        <option value="Photography Galleries">Photography Galleries</option>
+                        <option value="Pottery studios and painting studios">Pottery studios and painting studios</option>
+                        <option value="Craft Workshops">Craft Workshops</option>
+                        <option value="Performance Art Spaces">Performance Art Spaces</option>
+                        <option value="Cultural Centers">Cultural Centers</option>
+                        <option value="City Murals">City Murals</option>
+                        <option value="Art Fairs and Festivals">Art Fairs and Festivals</option>
+                    </optgroup>
+                    <optgroup label="Movies">
+                        <option value="Drive-In Theaters">Drive-In Theaters</option>
+                        <option value="Outdoor Theaters">Outdoor Theaters</option>
+                        <option value="Luxury Theaters">Luxury Theaters</option>
+                        <option value="IMAX Theaters">IMAX Theaters</option>
+                        <option value="3D Theaters">3D Theaters</option>
+                        <option value="4DX Theaters">4DX Theaters</option>
+                    </optgroup>
+                    <optgroup label="Events">
+                        <option value="Music Concerts">Music Concerts</option>
+                        <option value="Classical Concerts">Classical Concerts</option>
+                        <option value="Jazz Concerts">Jazz Concerts</option>
+                        <option value="Electronic Dance Music (EDM) Concerts">Electronic Dance Music (EDM) Concerts</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Ballet">Ballet</option>
+                        <option value="Variety Shows">Variety Shows</option>
+                        <option value="Magic Shows">Magic Shows</option>
+                        <option value="Circuses">Circuses</option>
+                        <option value="Plays and Musicals ">Plays and Musicals</option>
+                    </optgroup>
+                    <optgroup label="Indoors">
+                        <option value="Escape Rooms">Escape Rooms</option>
+                        <option value="Bowling Alleys">Bowling Alleys</option>
+                        <option value="Arcades">Arcades</option>
+                        <option value="Karaoke Bars">Karaoke Bars</option>
+                        <option value="Laser Tag Arenas">Laser Tag Arenas</option>
+                        <option value="Indoor Rock Climbing Gyms">Indoor Rock Climbing Gyms</option>
+                        <option value="Bookstores">Bookstores</option>
+                        <option value="Libraries">Libraries</option>
+                        <option value="Cooking Classes">Cooking Classes</option>
+                        <option value="Baking Classes">Baking Classes</option>
+                        <option value="Plays and Musicals ">Plays and Musicals</option>
+                    </optgroup>
+                    
+                    <optgroup label="Outdoors">
+                        <option value="Picnic Spots">Picnic Spots</option>
+                        <option value="Shopping Places">Shopping Places</option>
+                        <option value="Historical Places">Historical Places</option>
+                        <option value="Parks">Parks</option>
+                        <option value="Hiking Trails">Hiking Trails</option>
+                        <option value="Amusement Parks">Amusement Parks</option>
+                        <option value="Go Carting">Go Carting</option>
+                        <option value="Camping Sites">Camping Sites</option>
+                        <option value="Zoos or Aquariums">Zoos or Aquariums</option>
+                        <option value="Botanical Gardens">Botanical Gardens</option>
+                    </optgroup>
+                    <optgroup label="Sports">
+                        <option value="Pilates Classes">Pilates Classes</option>
+                        <option value="Soul Cycle">Soul Cycle</option>
+                        <option value="Zumba or Dance Classes">Zumba or Dance Classes</option>
+                        <option value="Ballroom Dancing (salsa, tango, or swing) places">Ballroom Dancing (salsa, tango, or swing) /option>
+                        <option value="Yoga Studios">Yoga Studios</option>
+                        <option value="Kickboxing">Kickboxing</option>
+                        <option value="Kayaking Places">Kayaking Places</option>
+                        <option value="Mini Golf or Golf Places">Mini Golf or Golf Places</option>
+                        <option value="Camping Sites">Camping Sites</option>
+                        <option value="Pickleball Place">Pickleball Place</option>
+                        <option value="Football or Basketball Places">Football or Basketball</option>
+                        <option value="Circket or Baseball Places">Circket or Baseball</option>
+                        <option value="Tennis or Badminton Court">Tennis or Badminton Court</option>
+                    </optgroup>
+                
                 </select>
                 <label for="location">Enter Location:</label>
                 <input type="text" id="location" name="location" placeholder="Enter a city or place">
